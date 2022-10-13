@@ -1,1 +1,35 @@
+body {
+    font-family: "Montserrat", sans-serif;
+    height: 100vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background: url("bg.jpg") no-repeat center;
+    background-size: cover;
+    background-attachment: fixed;
+    overflow: hidden;
+}
 
+body::before {
+    content: '';
+    display: block;
+    position: fixed;
+    inset: 0;
+    background: rgba(255, 255, 255, .3);
+}
+
+.card {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    width: 500px;
+    height: 270px;
+    background: linear-gradient(-25deg, black, #444, black);
+    border-radius: 15px;
+    color: white;
+    position: relative;
+    overflow: hidden;
+    text-shadow: 0 2px 0 black;
+    padding: 1.5rem 2rem;
+    box-shadow: 0 10px 50px -10px black;
+}
